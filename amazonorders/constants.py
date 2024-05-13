@@ -112,6 +112,7 @@ FIELD_ORDER_PAYMENT_METHOD_SELECTOR = "img.pmts-payment-credit-card-instrument-l
 FIELD_ORDER_PAYMENT_METHOD_LAST_4_SELECTOR = "img.pmts-payment-credit-card-instrument-logo"
 FIELD_ORDER_SUBTOTALS_TAG_ITERATOR_SELECTOR = "div#od-subtotals div.a-row"
 FIELD_ORDER_SUBTOTALS_INNER_TAG_SELECTOR = "div.a-span-last"
+FIELD_ORDER_REFUND_TOTAL_INNER_TAG_SELECTOR = "div.a-column.a-span5.a-text-right.a-span-last"
 FIELD_ORDER_ADDRESS_SELECTOR = "div.displayAddressDiv"
 FIELD_ORDER_ADDRESS_FALLBACK_1_SELECTOR = "div.recipient span.a-declarative"
 FIELD_ORDER_ADDRESS_FALLBACK_2_SELECTOR = "script[id^='shipToData']"

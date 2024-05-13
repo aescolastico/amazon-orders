@@ -245,8 +245,8 @@ class Order(Parsable):
         value = None
 
         for tag in self.parsed.select(constants.FIELD_ORDER_SUBTOTALS_TAG_ITERATOR_SELECTOR):
-            if "refund total" in tag.text.lower() and "tax refund" not in tag.text.lower():
-                inner_tag = tag.select_one(constants.FIELD_ORDER_SUBTOTALS_INNER_TAG_SELECTOR)
+            if "refund total" in tag.text.lower():
+                inner_tag = tag.select_one(constants.FIELD_ORDER_REFUND_TOTAL_INNER_TAG_SELECTOR)
                 if inner_tag:
                     value = float(inner_tag.text.strip().replace("$", "").replace(",", ""))
                     break
